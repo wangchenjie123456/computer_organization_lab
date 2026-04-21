@@ -1,0 +1,10 @@
+verilog xil_defaultlib  \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/DisplaySync.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/MC_14495.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/Seg7_Dev.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/sim/Seg7_Dev_2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

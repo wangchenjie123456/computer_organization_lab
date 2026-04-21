@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab4-test.gen/sources_1/ip/realRAM/sim/realRAM.v" \
+"../../../../lab4-test.gen/sources_1/ip/lab4_3ROM/sim/lab4_3ROM.v" \
+"../../../../../IP/ALU.v" \
+"../../../../../IP/DataPath.v" \
+"../../../../../IP/ImmGen.v" \
+"../../../../../IP/MUX2T1_32.v" \
+"../../../../../IP/MUX4T1_32.v" \
+"../../../../../IP/PC.v" \
+"../../../../../IP/Regs.v" \
+"../../../../../IP/SCPU.v" \
+"../../../../../IP/SCPU_ctrl.v" \
+"../../../../../IP/add.v" \
+"../../../../lab4-test.srcs/sim_1/new/SCPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

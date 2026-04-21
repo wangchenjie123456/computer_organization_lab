@@ -1,0 +1,280 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Dec 10 18:36:36 2025
+# Process ID         : 33024
+# Current directory  : C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.runs/synth_1
+# Command line       : vivado.exe -log Pipeline_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_CPU.tcl
+# Log file           : C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.runs/synth_1/Pipeline_CPU.vds
+# Journal file       : C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-3JDOGFA0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics      
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16421 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 22864 MB
+# Available Virtual  : 5342 MB
+#-----------------------------------------------------------
+source Pipeline_CPU.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.srcs/utils_1/imports/synth_1/Pipeline_CPU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.srcs/utils_1/imports/synth_1/Pipeline_CPU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Pipeline_CPU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32180
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 778.367 ; gain = 474.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_CPU' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_IF' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/myproject/verilog/lab5/lab5-p/IP/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_IF' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_IF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IF_reg_ID' [C:/myproject/verilog/lab5/lab5-p/IP/IF_reg_ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_reg_ID' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/IF_reg_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_ID' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [C:/myproject/verilog/lab5/lab5-p/IP/Regs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Regs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [C:/myproject/verilog/lab5/lab5-p/IP/ImmGen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/ImmGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SCPU_ctrl' [C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v:23]
+WARNING: [Synth 8-151] case item 5'b00000 is unreachable [C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v:45]
+INFO: [Synth 8-226] default block is never used [C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU_ctrl' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v:23]
+WARNING: [Synth 8-7071] port 'MIO_ready' of module 'SCPU_ctrl' is unconnected for instance 'SCPU_ctrl_0' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v:68]
+WARNING: [Synth 8-7071] port 'CPU_MIO' of module 'SCPU_ctrl' is unconnected for instance 'SCPU_ctrl_0' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v:68]
+WARNING: [Synth 8-7023] instance 'SCPU_ctrl_0' of module 'SCPU_ctrl' has 14 connections declared, but only 12 given [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_ID' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Rd_addr_out_ID' does not match port width (5) of module 'Pipeline_ID' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v:110]
+INFO: [Synth 8-6157] synthesizing module 'ID_reg_Ex' [C:/myproject/verilog/lab5/lab5-p/IP/ID_reg_Ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_reg_Ex' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/ID_reg_Ex.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'Rd_addr_IDEX' does not match port width (5) of module 'ID_reg_Ex' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v:124]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_Ex' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/myproject/verilog/lab5/lab5-p/IP/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/ALU.v:23]
+WARNING: [Synth 8-7071] port 'overflow' of module 'ALU' is unconnected for instance 'ALU_0' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Ex.v:44]
+WARNING: [Synth 8-7023] instance 'ALU_0' of module 'ALU' has 6 connections declared, but only 5 given [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Ex.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_Ex' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Ex.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ex_reg_Mem' [C:/myproject/verilog/lab5/lab5-p/IP/Ex_reg_Mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ex_reg_Mem' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Ex_reg_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_Mem' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_Mem' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem_reg_WB' [C:/myproject/verilog/lab5/lab5-p/IP/Mem_reg_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_reg_WB' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Mem_reg_WB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_WB' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_WB' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_CPU' (0#1) [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v:3]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity SCPU_ctrl does not have driver. [C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v:37]
+WARNING: [Synth 8-3848] Net overflow in module/entity ALU does not have driver. [C:/myproject/verilog/lab5/lab5-p/IP/ALU.v:26]
+WARNING: [Synth 8-7129] Port overflow in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CPU_MIO in module SCPU_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIO_ready in module SCPU_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[0] in module ImmGen is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 888.863 ; gain = 585.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 888.863 ; gain = 585.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 888.863 ; gain = 585.488
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 888.863 ; gain = 585.488
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 45    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	  10 Input    3 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 31    
+	  10 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1166.984 ; gain = 863.609
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1166.984 ; gain = 863.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1166.984 ; gain = 863.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    48|
+|3     |LUT1   |     1|
+|4     |LUT2   |    36|
+|5     |LUT3   |    68|
+|6     |LUT4   |   100|
+|7     |LUT5   |   215|
+|8     |LUT6   |   904|
+|9     |MUXF7  |   256|
+|10    |FDCE   |  1486|
+|11    |IBUF   |    66|
+|12    |OBUF   |   261|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+------------+------+
+|      |Instance     |Module      |Cells |
++------+-------------+------------+------+
+|1     |top          |            |  3442|
+|2     |  ex_mem     |Ex_reg_Mem  |   184|
+|3     |  id_ex      |ID_reg_Ex   |   738|
+|4     |  ifid       |IF_reg_ID   |   129|
+|5     |  mem_reg_wb |Mem_reg_WB  |   104|
+|6     |  pipe_ex    |Pipeline_Ex |    40|
+|7     |    ALU_0    |ALU         |    24|
+|8     |  pipe_id    |Pipeline_ID |  1855|
+|9     |    Regs_0   |Regs        |  1855|
+|10    |  pipe_if    |Pipeline_IF |    32|
+|11    |    PC_0     |PC          |    32|
+|12    |  pipe_wb    |Pipeline_WB |    32|
++------+-------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1294.723 ; gain = 991.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1309.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 304 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8efa6533
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1424.066 ; gain = 1125.910
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1424.066 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.runs/synth_1/Pipeline_CPU.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Pipeline_CPU_utilization_synth.rpt -pb Pipeline_CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 10 18:37:02 2025...

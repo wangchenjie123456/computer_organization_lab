@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab5-p.gen/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../lab5-p.gen/sources_1/ip/ROM_D/sim/ROM_D.v" \
+"../../../../../IP/ALU.v" \
+"../../../../../IP/Ex_reg_Mem.v" \
+"../../../../../IP/ID_reg_Ex.v" \
+"../../../../../IP/IF_reg_ID.v" \
+"../../../../../IP/ImmGen.v" \
+"../../../../../IP/Mem_reg_WB.v" \
+"../../../../../IP/PC.v" \
+"../../../../../IP/Pipeline_CPU.v" \
+"../../../../../IP/Pipeline_Ex.v" \
+"../../../../../IP/Pipeline_ID.v" \
+"../../../../../IP/Pipeline_IF.v" \
+"../../../../../IP/Pipeline_Mem.v" \
+"../../../../../IP/Pipeline_WB.v" \
+"../../../../../IP/Regs.v" \
+"../../../../../IP/SCPU_ctrl.v" \
+"../../../../lab5-p.srcs/sim_1/new/SOC_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

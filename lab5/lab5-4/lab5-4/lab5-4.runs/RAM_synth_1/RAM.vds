@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Dec 13 14:26:47 2025
+# Process ID         : 1428
+# Current directory  : C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1
+# Command line       : vivado.exe -log RAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM.tcl
+# Log file           : C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1/RAM.vds
+# Journal file       : C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1\vivado.jou
+# Running On         : LAPTOP-3JDOGFA0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics      
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16421 MB
+# Swap memory        : 7507 MB
+# Total Virtual      : 23929 MB
+# Available Virtual  : 4818 MB
+#-----------------------------------------------------------
+source RAM.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/myproject/verilog/lab2/lab2IP/IP/Seg7_Dev'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: RAM
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 296588c2b929c78e to dir: C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.cache/ip/2024.2/2/9/296588c2b929c78e/RAM.dcp to C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1/RAM.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.cache/ip/2024.2/2/9/296588c2b929c78e/RAM_sim_netlist.v to C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1/RAM_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.cache/ip/2024.2/2/9/296588c2b929c78e/RAM_sim_netlist.vhdl to C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1/RAM_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.cache/ip/2024.2/2/9/296588c2b929c78e/RAM_stub.v to C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1/RAM_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.cache/ip/2024.2/2/9/296588c2b929c78e/RAM_stub.vhdl to C:/myproject/verilog/lab5/lab5-4/lab5-4/lab5-4.runs/RAM_synth_1/RAM_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP RAM, cache-ID = 296588c2b929c78e.
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 13 14:26:50 2025...

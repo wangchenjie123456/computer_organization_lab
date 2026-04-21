@@ -1,0 +1,43 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab5-4.gen/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../lab5-4.gen/sources_1/ip/ROM_D/sim/ROM_D.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/DisplaySync.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/MC_14495.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/Seg7_Dev.v" \
+"../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/sim/Seg7_Dev_2.v" \
+"../../../../../IP/ALU.v" \
+"../../../../../IP/Counter/Counter_x.v" \
+"../../../../../IP/Ex_reg_Mem.v" \
+"../../../../../IP/VGA/Hex2Ascii.v" \
+"../../../../../IP/ID_reg_Ex.v" \
+"../../../../../IP/IF_reg_ID.v" \
+"../../../../../IP/ImmGen.v" \
+"../../../../../IP/MIOBUS/MIO_BUS.v" \
+"../../../../../IP/Mem_reg_WB.v" \
+"../../../../../IP/Multi_8CH32/Multi_8CH32.v" \
+"../../../../../IP/PC.v" \
+"../../../../../IP/Pipeline_CPU.v" \
+"../../../../../IP/Pipeline_Ex.v" \
+"../../../../../IP/Pipeline_ID.v" \
+"../../../../../IP/Pipeline_IF.v" \
+"../../../../../IP/Pipeline_Mem.v" \
+"../../../../../IP/Pipeline_WB.v" \
+"../../../../../IP/Regs.v" \
+"../../../../../IP/SAnti_jitter/SAnti_jitter.v" \
+"../../../../../IP/SCPU_ctrl.v" \
+"../../../../../IP/SPIO/SPIO.v" \
+"../../../../../IP/VGA/VGA.v" \
+"../../../../../IP/VGA/VgaController.v" \
+"../../../../../IP/VGA/VgaDebugger.v" \
+"../../../../../IP/VGA/VgaDisplay.v" \
+"../../../../../IP/clkdiv/clk_div.v" \
+"../../../../../IP/stall.v" \
+"../../../../lab5-4.srcs/sources_1/new/CSSTE.v" \
+"../../../../lab5-4.srcs/sim_1/new/SOC_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

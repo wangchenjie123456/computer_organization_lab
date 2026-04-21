@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/lab4-test/lab4-test.gen/sources_1/ip/realRAM/sim/realRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module realRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/lab4-test/lab4-test.gen/sources_1/ip/lab4_3ROM/sim/lab4_3ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab4_3ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/DataPath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/MUX4T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/SCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/SCPU_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/IP/add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/myproject/verilog/lab4/lab4-test/lab4-test/lab4-test.srcs/sim_1/new/SCPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_tb

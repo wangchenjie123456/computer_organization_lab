@@ -1,0 +1,12 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_9 -L dist_mem_gen_v8_0_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SOC_tb_behav xil_defaultlib.SOC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'Rd_addr_out_ID' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v:110]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'Rd_addr_IDEX' [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v:124]
+WARNING: [VRFC 10-5021] port 'MIO_ready' is not connected on this instance [C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v:68]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

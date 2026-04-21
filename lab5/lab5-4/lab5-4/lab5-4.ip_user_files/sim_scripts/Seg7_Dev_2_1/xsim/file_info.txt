@@ -1,0 +1,5 @@
+DisplaySync.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_1/DisplaySync.v,
+MC_14495.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_1/MC_14495.v,
+Seg7_Dev.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_1/Seg7_Dev.v,
+Seg7_Dev_2.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_1/sim/Seg7_Dev_2.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

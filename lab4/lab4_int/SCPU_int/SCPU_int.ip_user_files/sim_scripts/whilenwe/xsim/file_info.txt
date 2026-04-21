@@ -1,0 +1,2 @@
+whilenwe.v,verilog,xil_defaultlib,../../../../SCPU_int.gen/sources_1/ip/whilenwe/sim/whilenwe.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,23 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/myproject/verilog/lab5/lab5-p/IP/ALU.v,1765351687,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Ex_reg_Mem.v,,ALU,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Ex_reg_Mem.v,1765352085,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/ID_reg_Ex.v,,Ex_reg_Mem,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/ID_reg_Ex.v,1765348953,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/IF_reg_ID.v,,ID_reg_Ex,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/IF_reg_ID.v,1765348422,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/ImmGen.v,,IF_reg_ID,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/ImmGen.v,1765348821,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Mem_reg_WB.v,,ImmGen,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Mem_reg_WB.v,1765352230,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/PC.v,,Mem_reg_WB,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/PC.v,1765348254,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v,,PC,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_CPU.v,1765362907,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Ex.v,,Pipeline_CPU,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Ex.v,1765362049,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v,,Pipeline_Ex,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_ID.v,1765349531,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_IF.v,,Pipeline_ID,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_IF.v,1765349059,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Mem.v,,Pipeline_IF,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_Mem.v,1765352172,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_WB.v,,Pipeline_Mem,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Pipeline_WB.v,1765362050,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/Regs.v,,Pipeline_WB,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/Regs.v,1765362966,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v,,Regs,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/IP/SCPU_ctrl.v,1765348881,verilog,,C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.srcs/sim_1/new/SOC_tb.v,,SCPU_ctrl,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.gen/sources_1/ip/RAM/sim/RAM.v,1765363826,verilog,,C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.gen/sources_1/ip/ROM_D/sim/ROM_D.v,,RAM,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.gen/sources_1/ip/ROM_D/sim/ROM_D.v,1765363685,verilog,,C:/myproject/verilog/lab5/lab5-p/IP/ALU.v,,ROM_D,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/myproject/verilog/lab5/lab5-p/lab5-p/lab5-p.srcs/sim_1/new/SOC_tb.v,1765364004,verilog,,,,SOC_tb,,,,,,,,

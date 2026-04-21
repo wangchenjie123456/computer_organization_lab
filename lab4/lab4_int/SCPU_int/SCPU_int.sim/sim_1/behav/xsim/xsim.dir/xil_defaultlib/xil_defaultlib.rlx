@@ -1,0 +1,19 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/myproject/verilog/lab4/lab4_int/IP/ALU.v,1731816570,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/DataPath.v,,ALU,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/DataPath.v,1764426631,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/ImmGen.v,,DataPath,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/ImmGen.v,1764426470,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/MUX2T1_32.v,,ImmGen,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/MUX2T1_32.v,1731811688,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/MUX4T1_32.v,,MUX2T1_32,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/MUX4T1_32.v,1731811660,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/PC.v,,MUX4T1_32,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/PC.v,1764234357,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/RV_Int.v,,PC,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/RV_Int.v,1764235918,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/Regs.v,,RV_Int,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/Regs.v,1764234178,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/SCPU.v,,Regs,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/SCPU.v,1764234166,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/SCPU_ctrl.v,,SCPU,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/SCPU_ctrl.v,1736262321,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/add.v,,SCPU_ctrl,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/IP/add.v,1731811671,verilog,,C:/myproject/verilog/lab4/lab4_int/SCPU_int/SCPU_int.srcs/sim_1/new/SCPU_tb.v,,add_32,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/SCPU_int/SCPU_int.gen/sources_1/ip/fakeRAM/sim/fakeRAM.v,1763993840,verilog,,C:/myproject/verilog/lab4/lab4_int/SCPU_int/SCPU_int.gen/sources_1/ip/whilenwe/sim/whilenwe.v,,fakeRAM,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/SCPU_int/SCPU_int.gen/sources_1/ip/whilenwe/sim/whilenwe.v,1763993717,verilog,,C:/myproject/verilog/lab4/lab4_int/IP/ALU.v,,whilenwe,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/SCPU_int/SCPU_int.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/myproject/verilog/lab4/lab4_int/SCPU_int/SCPU_int.srcs/sim_1/new/SCPU_tb.v,1764490799,verilog,,,,SCPU_tb,,,,,,,,

@@ -1,0 +1,43 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_9 -L dist_mem_gen_v8_0_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SOC_tb_behav xil_defaultlib.SOC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'Rd_addr_out_ID' [C:/myproject/verilog/lab5/lab5-4/IP/Pipeline_CPU.v:175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'Rd_addr_IDEX' [C:/myproject/verilog/lab5/lab5-4/IP/Pipeline_CPU.v:233]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'Jump_ID' [C:/myproject/verilog/lab5/lab5-4/IP/Pipeline_CPU.v:355]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'Jump_out_IDEX' [C:/myproject/verilog/lab5/lab5-4/IP/Pipeline_CPU.v:358]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'Jump_out_EXMem' [C:/myproject/verilog/lab5/lab5-4/IP/Pipeline_CPU.v:361]
+WARNING: [VRFC 10-5021] port 'MIO_ready' is not connected on this instance [C:/myproject/verilog/lab5/lab5-4/IP/Pipeline_ID.v:122]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module dist_mem_gen_v8_0_15.dist_mem_gen_v8_0_15(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_D
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_output_stage(...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Pipeline_IF
+Compiling module xil_defaultlib.IF_reg_ID
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.SCPU_ctrl
+Compiling module xil_defaultlib.Pipeline_ID
+Compiling module xil_defaultlib.ID_reg_Ex
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Pipeline_Ex
+Compiling module xil_defaultlib.Ex_reg_Mem
+Compiling module xil_defaultlib.Pipeline_Mem
+Compiling module xil_defaultlib.Mem_reg_WB
+Compiling module xil_defaultlib.Pipeline_WB
+Compiling module xil_defaultlib.stall
+Compiling module xil_defaultlib.Pipeline_CPU
+Compiling module xil_defaultlib.SOC_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SOC_tb_behav

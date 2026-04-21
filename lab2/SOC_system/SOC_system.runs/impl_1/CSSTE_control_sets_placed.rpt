@@ -1,0 +1,156 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Nov 24 17:08:24 2025
+| Host         : LAPTOP-3JDOGFA0 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CSSTE_control_sets_placed.rpt
+| Design       : CSSTE
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    78 |
+|    Minimum number of control sets                        |    78 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    49 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    78 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |    64 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            7 |
+| No           | No                    | Yes                    |              49 |           24 |
+| No           | Yes                   | No                     |              28 |            9 |
+| Yes          | No                    | No                     |               6 |            3 |
+| Yes          | No                    | Yes                    |              32 |           12 |
+| Yes          | Yes                   | No                     |              42 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|      Clock Signal     |               Enable Signal              |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+------------------------------------------+---------------------------------------+------------------+----------------+--------------+
+|  U8/Clk_CPU           |                                          | U9/rst                                |                1 |              1 |         1.00 |
+| ~U8/Clk_CPU           |                                          |                                       |                1 |              1 |         1.00 |
+|  U8/clkdiv_BUFG[6]    |                                          |                                       |                1 |              1 |         1.00 |
+|  U8/clkdiv_BUFG[6]    |                                          | U9/rst                                |                1 |              1 |         1.00 |
+|  U8/clkdiv_BUFG[1]    |                                          | U9/rst                                |                2 |              2 |         1.00 |
+|  clk_100mhz_IBUF_BUFG | U9/u1/sw[15]_i_1_n_0                     |                                       |                3 |              6 |         2.00 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_4   |                                       |                2 |              8 |         4.00 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_1   |                                       |                2 |              8 |         4.00 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_12 |                                       |                3 |             10 |         3.33 |
+|  U8/clkdiv_BUFG[1]    |                                          | U11/vga_controller/h_count[9]_i_1_n_0 |                3 |             10 |         3.33 |
+|  U8/clkdiv_BUFG[1]    | U11/vga_controller/v_count               | U9/rst                                |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_6  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_2   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_9  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_6  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_8  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_3   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_1   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_3   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_0   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_7   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_7   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_8   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_9   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_6   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_5   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_1   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_10  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_5   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_5   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_9   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_8   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_3   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_0   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_6   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_6   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_7   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_3   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_1   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_2   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_0   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_5   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_6   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_2   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[9]_8   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_4   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_2   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[7]_4   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_11  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[8]_4   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_10 |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_11 |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_2  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_7  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_9  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_13 |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_3  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[6]_0   |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_0  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_11 |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_3  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_5  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_2  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_4  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_7  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_8  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_5  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[11]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_4  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_1  |                                       |                3 |             10 |         3.33 |
+|  clk_100mhz_IBUF_BUFG | U11/vga_debugger/display_addr_reg[10]_10 |                                       |                3 |             10 |         3.33 |
+|  U2/Regs_0/clk_2      |                                          | U9/rst                                |               14 |             15 |         1.07 |
+|  clk_100mhz_IBUF_BUFG |                                          | U11/vga_debugger/p_0_in               |                4 |             16 |         4.00 |
+|  clk_100mhz_IBUF_BUFG |                                          |                                       |                5 |             16 |         3.20 |
+|  U8/clkdiv_BUFG[6]    | U10/counter0[31]                         | U9/rst                                |               12 |             32 |         2.67 |
+|  clk_100mhz_IBUF_BUFG |                                          | U9/rst                                |                8 |             32 |         4.00 |
+|  clk_100mhz_IBUF_BUFG | U9/u1/sw_counter[0]_i_1_n_0              | U9/u1/sw_counter0_carry__0_n_2        |                8 |             32 |         4.00 |
++-----------------------+------------------------------------------+---------------------------------------+------------------+----------------+--------------+
+
+

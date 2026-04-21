@@ -1,0 +1,7 @@
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,
+DisplaySync.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/DisplaySync.v,
+MC_14495.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/MC_14495.v,
+Seg7_Dev.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/Seg7_Dev.v,
+Seg7_Dev_2.v,verilog,xil_defaultlib,../../../../lab5-4.gen/sources_1/ip/Seg7_Dev_2_2/sim/Seg7_Dev_2.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

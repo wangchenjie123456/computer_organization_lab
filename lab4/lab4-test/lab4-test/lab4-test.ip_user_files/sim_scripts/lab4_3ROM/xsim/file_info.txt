@@ -1,0 +1,2 @@
+lab4_3ROM.v,verilog,xil_defaultlib,../../../../lab4-test.gen/sources_1/ip/lab4_3ROM/sim/lab4_3ROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

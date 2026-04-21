@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SCPU_test.gen/sources_1/ip/ROM_B/sim/ROM_B.v" \
+"../../../../SCPU_test.gen/sources_1/ip/RAM_A/sim/RAM_A.v" \
+"../../../../../SCPU_IP/ALU.v" \
+"../../../../../SCPU_IP/DataPath.v" \
+"../../../../../SCPU_IP/ImmGen.v" \
+"../../../../../SCPU_IP/MUX2T1_32.v" \
+"../../../../../SCPU_IP/MUX4T1_32.v" \
+"../../../../../SCPU_IP/REG32.v" \
+"../../../../../SCPU_IP/SCPU.v" \
+"../../../../../SCPU_IP/SCPU_ctrl.v" \
+"../../../../SCPU_test.srcs/sources_1/new/SCPU_test.v" \
+"../../../../../SCPU_IP/regs.v" \
+"../../../../SCPU_test.srcs/sim_1/new/SCPU_test_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
